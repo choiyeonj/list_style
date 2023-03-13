@@ -1,0 +1,159 @@
+*{margin: 0; padding: 0;}
+ li{list-style: none;}
+ a{
+    text-decoration: none; color: #222;
+    display: block; width: 100%;
+}
+
+
+ /* header */
+.header{
+    width: 100%;
+    height: 160px;
+    background-color: rgb(133, 196, 37);
+}
+
+.ui{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding-top: 5px;
+}
+
+.ui div{
+    float: left;
+}
+
+.ui .wifi{
+    font-size: 10px;
+}
+
+.ui .wifi ul, p{
+    float: left;
+    margin-right: 5px;
+}
+
+.ui .wifi ul{
+    margin-left: 5px;
+}
+
+.ui .wifi ul li{
+    display: inline-block;
+}
+
+.ui .battery{
+    margin-right: 5px;
+}
+
+.ui .battery li{
+    display: inline-block;
+}
+
+.ui .battery li.gray{
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.title{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.title h2{
+    text-align: center;
+    color: #fff;
+}
+
+.title a{
+    position: absolute;
+    font-size: 24px;
+    color: #fff;
+}
+
+.title a i{
+    color: #fff;
+    margin: 0 7px;
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+.search{
+    width: 100%;
+    height: 60px;
+    background-color: #ccc;
+    margin-top: 22px;
+}
+
+#search_box{
+    width: 94%;
+    height: 50px;
+    margin: 5px 11px;
+    border-radius: 7px;
+    border: none;
+    font-size: 20px;
+}
+
+input:focus{
+    outline: none;
+}
+
+
+/* album */
+.album{
+    position: relative;
+    width: 100%;
+}
+
+.album span{
+    display: block;
+    padding: 25px 10px 7px;
+    color: #777;
+}
+
+.album span i{
+    line-height: 21px;
+    float: right;
+}
+
+.album .album_container{
+    width: 100%;
+    overflow: hidden;
+}
+
+.album .album_container .album_list{
+    width: 100%;
+}
+
+.album .album_container>div img{
+    width: 25%;
+    display: block;
+    float: left;
+}
+
+@media all and (min-width:321px) and (orientation:landscape){
+    .album .album_container>div img{
+        width: 12.5%;
+        display: block;
+        float: left;
+    }
+}
+
+
+/* footer */
+.footer{
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+
+.footer a {
+    width: 25%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #ccc;
+    color: #fff;
+    font-size: 25px;
+    float: left;
+}
